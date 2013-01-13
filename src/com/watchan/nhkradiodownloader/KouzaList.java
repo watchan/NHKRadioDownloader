@@ -10,9 +10,7 @@ import android.os.Handler;
 import android.os.Message;
 import android.app.Activity;
 import android.app.ProgressDialog;
-import android.content.Intent;
 import android.util.Log;
-import android.view.Menu;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -43,7 +41,7 @@ public class KouzaList extends Activity implements Runnable {
 			ArrayList<Kouza> kouzalist = radio.allkouzalist.get(i);
 
 			if (kouzalist.get(0).getTitle().equals(title)) {
-				// kouzanum = i;
+
 				textview.setText(title);
 
 				for (int j = 0; j < kouzalist.size(); j++) {

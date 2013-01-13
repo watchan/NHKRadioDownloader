@@ -26,6 +26,10 @@ import android.util.Log;
  */
 class Kouza implements Serializable {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private String title;
 	private String hdate;
 	private String filename;
@@ -64,6 +68,10 @@ class Kouza implements Serializable {
 
 public class NHKRadio implements Serializable {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	String magicdigit;
 	String xmlpath;
 	String xml;
