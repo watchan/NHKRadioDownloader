@@ -18,10 +18,6 @@ import org.xml.sax.SAXException;
 
 import android.util.Log;
 
-/**
- * @author watadashohei
- *
- */
 class Kouza implements Serializable {
 
   private String title;
@@ -54,11 +50,6 @@ class Kouza implements Serializable {
 
 }
 
-
-/**
- * @author watadashohei
- *
- */
 
 public class NHKRadio implements Serializable {
 
