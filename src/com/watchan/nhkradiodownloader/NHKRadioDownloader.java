@@ -12,7 +12,9 @@ import android.app.Activity;
 import android.app.NotificationManager;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -28,7 +30,8 @@ public class NHKRadioDownloader extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_nhkradio_downloader);
-
+		Log.d("NHK","Test");
+		
 		try {
 			radio = new NHKRadio();
 
@@ -93,10 +96,23 @@ public class NHKRadioDownloader extends Activity {
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.activity_nhkradio_downloader, menu);
-		return true;
+		//menu.add( yƒƒjƒ…[‚ÌƒOƒ‹[ƒvz,yƒƒjƒ…[‚ÌIDz,yƒƒjƒ…[‚Ìƒ\[ƒg‡z, y•\¦‚·‚é•¶š—ñz );
+		menu.add(0,0, 0, "İ’è");
+		return super.onCreateOptionsMenu(menu);
 
 	}
+	
+	public boolean onOptionsItemSelected( MenuItem mi ){
 
+		switch( mi.getItemId() ){
+	    case 0:
+	    	Log.d("NHK","0");
+	      break;
+	    case 1:
+	    	Log.d("NHK","1");
+	      break;
+	  }
+	  
+		return true;
+	}
 }

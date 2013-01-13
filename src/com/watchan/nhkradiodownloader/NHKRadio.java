@@ -20,15 +20,10 @@ import org.xml.sax.SAXException;
 
 import android.util.Log;
 
-/**
- * @author watadashohei
- *
- */
+
 class Kouza implements Serializable {
 
-	/**
-	 * 
-	 */
+
 	private static final long serialVersionUID = 1L;
 	private String title;
 	private String hdate;

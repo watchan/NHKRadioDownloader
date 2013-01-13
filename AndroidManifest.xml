@@ -33,6 +33,10 @@
             android:name="com.watchan.nhkradiodownloader.KouzaList"
             android:label="@string/title_activity_kouza_list" >
         </activity>
+        <activity
+            android:name="com.watchan.nhkradiodownloader.SettingsActivity"
+            android:label="@string/title_activity_settings" >
+        </activity>
     </application>
 
 </manifest>
